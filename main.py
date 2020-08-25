@@ -12,22 +12,19 @@ app.mount("/js", StaticFiles(directory="js"), name="js")
 @app.get("/")
 @app.get("/index")
 def index_redir():
-    return RedirectResponse(url="/home")
+    return RedirectResponse(url="/home", status_code=301)
 
 
 @app.get("/home")
 def index():
     page_content = open("pages/index.html").read()
-
     page_content = ef.fillin_hf(page_content)
-
     return HTMLResponse(content=page_content)
 
 
 @app.get("/linux")
 def linux():
     page_content = open("pages/linux.html").read()
-
     page_content = ef.fillin_hf(page_content)
 
     return HTMLResponse(content=page_content)

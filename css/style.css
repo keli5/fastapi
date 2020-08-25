@@ -2,8 +2,30 @@
 
 body {
     font-family: "Ubuntu", sans, sans-serif;
+    font-size: 1vw;
     margin: 0;
     padding: 0;
+    padding-top: 4.7vw;
+}
+
+.page_content {
+    margin-left: 1vw;
+}
+
+#wvl-table * {
+    width: 33%;
+    text-align: center;
+    font-size: 1.5vw;
+    border: 0.1vw solid #333;
+}
+
+p {
+    font-size: 1.35vw;
+}
+
+h1 {
+    font-size: 4vw;
+    margin-bottom: 0;
 }
 
 ul.nav {
@@ -25,7 +47,7 @@ li.nav a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1vw 1.35vw;
     text-decoration: none;
 }
 
